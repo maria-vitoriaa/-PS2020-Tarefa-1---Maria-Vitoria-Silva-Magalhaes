@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>[PS2020] - Tarefa 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>-->
+</head>
+<body>
+    <script>
+        
+        var pessoa = {
+            nome:"x",
+            idade:0,
+        }
+        var pessoa1 = {
+            nome:"a",
+            idade:0,
+        }
+        var pessoa2 = {
+            nome:"b",
+            idade:0,
+        }
+        var pessoa3 = {
+            nome:"c",
+            idade:0,
+        }
+        var pessoa4 = {
+            nome:"d",
+            idade:0,
+        }
+        
+        var universidade = {
+            curso:"Engenharia da Computação",
+            periodos:10,
+            cargahoraria:3630,
+        }
+        
+        var republica = {
+            rep:"República Orfanato",
+            anos:10,
+            quantMoradores:5,
+        }
+        
+        
+        pessoa1.nome="Pedro";
+        pessoa1.idade=20;
+        pessoa1.curso="Engenharia da Computação";
+
+        pessoa2.nome="Ana";
+        pessoa2.idade=17;
+        pessoa2.curso="Engenharia da Computação";
+
+        pessoa3.nome="Paulo";
+        pessoa3.idade=23;
+        pessoa3.rep="República Orfanato";
+
+        pessoa4.nome="Armando";
+        pessoa4.idade=17;
+        pessoa4.rep="República Orfanato";
+ 
+        var garçom=prompt("Informe o nome do garçom para prosseguir:");
+        if(garçom=="André"||garçom=="Andre"){
+            var nome=prompt("Qual cliente gostaria de checar a idade?");
+                if(nome=="Pedro"){
+                        console.log(checarIDs(pessoa1));}
+                if(nome=="Ana"){
+                        console.log(checarIDs(pessoa2));
+                    }
+                if(nome=="Paulo"){
+                        console.log(checarIDs(pessoa3));
+                    }
+                if(nome=="Armando"){
+                        console.log(checarIDs(pessoa4));
+                    }
+        }
+        else{
+            console.log("Somente o garçom pode checar as IDs");
+        }
+
+        function checarIDs(pessoa) {
+            if(pessoa.idade>=18){
+                console.log(pessoa.nome, "pode beber.");
+            }
+            else{
+                    console.log(pessoa.nome, "vai beber Coca Cola.");
+            }
+        }
+
+        
+        //Outra linha de raciocínio em que os dados são apresentados sequencialmente:
+
+        // var pessoa = {
+        //     nome:"x",
+        //     idade:0,
+        //     garçom:"",
+        // }
+        // var pessoa1 = {
+        //     nome:"a",
+        //     idade:0,
+        //     garçom:"",
+        // }
+        // var pessoa2 = {
+        //     nome:"b",
+        //     idade:0,
+        //     garçom:"",
+        // }
+        // var pessoa3 = {
+        //     nome:"c",
+        //     idade:0,
+        //     garçom:"",
+        // }
+        // var pessoa4 = {
+        //     nome:"d",
+        //     idade:0,
+        //     garçom:"",
+        // }
+        // var pessoa5 = {
+        //     nome:"e",
+        //     garçom:"",
+        // }
+        
+        // var universidade = {
+        //     curso:"Engenharia da Computação",
+        //     periodos:10,
+        //     cargahoraria:3630,
+        // }
+        
+        // var republica = {
+        //     rep:"República Orfanato",
+        //     anos:10,
+        //     quantMoradores:5,
+        // }
+        
+        
+        // pessoa1.nome="Pedro";
+        // pessoa1.idade=20;
+        // pessoa1.curso="Engenharia da Computação";
+        // pessoa1.garçom='false';
+
+        // pessoa2.nome="Ana";
+        // pessoa2.idade=17;
+        // pessoa2.curso="Engenharia da Computação";
+        // pessoa2.garçom='false';
+
+        // pessoa3.nome="Paulo";
+        // pessoa3.idade=23;
+        // pessoa3.rep="República Orfanato";
+        // pessoa3.garçom='false';
+
+        // pessoa4.nome="Armando";
+        // pessoa4.idade=17;
+        // pessoa4.rep="República Orfanato";
+        // pessoa4.garçom='false';
+        
+        // pessoa5.nome="André";
+        // pessoa5.garçom='true';
+
+        // if(pessoa5.garçom=='true'){
+        //     function checarIDs(pessoa) {
+        //         if(pessoa.idade>=18){
+        //             console.log(pessoa.nome, "pode beber.");
+        //         }
+        //         else{
+        //             console.log(pessoa.nome, "vai beber Coca Cola.");
+        //         }
+        //     }
+        // }
+        // else{
+        //     console.log("Somente o garçom pode checar as IDs");
+        // }
+        
+        // console.log(checarIDs(pessoa1));
+        // console.log(checarIDs(pessoa2));
+        // console.log(checarIDs(pessoa3));
+        // console.log(checarIDs(pessoa4));
+        
+    </script>
+</body>
+</html>
